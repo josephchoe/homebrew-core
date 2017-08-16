@@ -1,15 +1,16 @@
 class Postgresql < Formula
   desc "Object-relational database system"
   homepage "https://www.postgresql.org/"
-  url "https://ftp.postgresql.org/pub/source/v9.6.3/postgresql-9.6.3.tar.bz2"
-  sha256 "1645b3736901f6d854e695a937389e68ff2066ce0cde9d73919d6ab7c995b9c6"
+  url "https://ftp.postgresql.org/pub/source/v9.5.2/postgresql-9.5.2.tar.bz2"
+  sha256 "f8d132e464506b551ef498719f18cfe9d777709c7a1589dc360afc0b20e47c41"
 
   head "https://github.com/postgres/postgres.git"
 
   bottle do
-    sha256 "9114cef478fd44f8ff0e1ecef5d3ac59aaefdc6907d984d721be1d418a91d932" => :sierra
-    sha256 "6fff45123e78105945a03b5c159f68d638d41a88421c25c28ecfb30def846dda" => :el_capitan
-    sha256 "a3070af563a1328ec92946b502e827c3f0a6d5c98d45abb414b3acbed7829bd1" => :yosemite
+    revision 1
+    sha256 "12bc2c22b06aaa82f577c14a667805a6e8aed9065a3a376e324393afdf6b62f0" => :el_capitan
+    sha256 "5e7ee10a23edb6ee985f49a969894133939a20eaeee2f2841cb8be82c2f79c74" => :yosemite
+    sha256 "e6673530167899750d5f2eaaebe53e7ff8b10caada449aef39d66a1af39cfe49" => :mavericks
   end
 
   option "without-perl", "Build without Perl support"
